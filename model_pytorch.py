@@ -7,7 +7,6 @@ from torchvision import transforms
 import os
 import pandas as pd
 from u_2_net.data_loader import RescaleT
-from u_2_net.data_loader import ToTensor
 from u_2_net.data_loader import ToTensorLab
 from u_2_net.data_loader import SalObjDataset
 from u_2_net.model.u2net import U2NETP
@@ -134,10 +133,7 @@ class Model_Pytorch:
                 cv.imwrite(file, crop_img)
 
                 del image
-        # if train:
-        #     pd.DataFrame({'image': error_log}).to_csv(os.path.join(root_out, 'Ignorance_Train_Img.csv'))
-        # else:
-        #     pd.DataFrame({'image': error_log}).to_csv(os.path.join(root_out, 'Ignorance_Test_Img.csv'))
+
 
     def cut_image_bg_pytorch(self, img_path):
         paths = ["./data/sample.jpg", img_path]

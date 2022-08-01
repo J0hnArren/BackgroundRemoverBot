@@ -2,13 +2,11 @@ import telebot
 from requests.exceptions import ConnectTimeout
 from telebot import types
 from dotenv import dotenv_values
-import os
 from model_pytorch import *
 from model_tensorflow import *
 
 config = dotenv_values(".env")['TOKEN']
 bot = telebot.TeleBot(config, parse_mode=None)
-IS_IMAGE_RECEIVED = False
 
 
 def keyboard():
