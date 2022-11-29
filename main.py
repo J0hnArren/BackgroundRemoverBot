@@ -24,14 +24,15 @@ def keyboard():
 def send_welcome(message):
     # username
     bot.send_message(message.chat.id, f"Hello, {message.from_user.first_name}! \nSend here a picture in which you "
-                                      "want to cut out the background. Clear images of people are processed best",
+                                      "want to cut out the background. Clear images of people on a visually "
+                                      "well-separated background are processed best.",
                      reply_markup=keyboard())
 
 
 @bot.message_handler(commands=['help'])
 def send_help(message):
     bot.send_message(message.chat.id, "Send here an image which you want to cut out the background.\nClear images of "
-                                      "people are processed best",
+                                      "people on a visually well-separated background are processed best.",
                      reply_markup=keyboard())
 
 
@@ -39,7 +40,8 @@ def send_help(message):
 def show_info(message):
     try:
         if message.text == 'FAQ':
-            bot.send_message(message.chat.id, """Author's contacts\nGithub:   \nemail: rauf.parchiev@gmail.com""",
+            bot.send_message(message.chat.id, "Author's contacts\nGithub: https://github.com/J0hnArren \nemail: "
+            "rauf.parchiev@gmail.com",
                              reply_markup=keyboard())
         else:
             bot.reply_to(message, "Invalid message")
