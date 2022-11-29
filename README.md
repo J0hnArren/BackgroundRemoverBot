@@ -35,3 +35,6 @@ To work correctly, you need to add ```git clone https://github.com/shreyas-bk/U-
   <img src="./examples/citty_pytorch.jpg" width="31%" />
   <img src="./examples/citty_tensorflow.jpg" width="31%" /> 
 </p>
+
+
+❗The bot does not collect any data and does not save images locally
