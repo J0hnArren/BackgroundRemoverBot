@@ -4,4 +4,6 @@
 
 [Link to the telegram bot](https://t.me/simple_bg_remover_bot)
 
-To work correctly, you need to add ```git clone https://github.com/shreyas-bk/U-2-Net``` to the project folder and *.pth* and *.h5* files with model weights in the models folder
+To work correctly, you need to add ```git clone https://github.com/shreyas-bk/U-2-Net``` to the project folder and *.pth* and *.h5* files with model weights in the models folder.
+
+## Example of results:
