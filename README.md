@@ -1,4 +1,4 @@
-# BackgroundRemoverBot
+# Human picture background remover bot
 
 2 ways to remove background using pure deep learning and its mixture with traditional methods
 
@@ -28,7 +28,7 @@ To work correctly, you need to add ```git clone https://github.com/shreyas-bk/U-
   <img src="./examples/tensorflow3.jpg" width="21%" /> 
 </p>
 
-### Example of a picture that models can't handle:
+### Example of a picture without human that models can't handle:
 
 <p float="left">
   <img src="./examples/citty.jpg" width="31%" />
